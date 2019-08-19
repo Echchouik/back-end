@@ -1,0 +1,19 @@
+# Spring Boot Configuration
+spring:
+  profiles:    active: dev
+---
+#Dev profile configuration    spring:  profiles: dev
+# Database Configuration  datasource:    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/dmyAlbum
+    username: postgres
+    password: home2019
+# JPA properties  jpa:    hibernate:      ddl-auto: update
+    show-sql: true
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    open-in-view: false
+    generate-ddl: false
+# Logger configuration
+logging:  pattern:    console: "%d %-5level %logger : %msg%n"
+  level:    org.springframework: ERROR
+    org.hibernate: INFO
