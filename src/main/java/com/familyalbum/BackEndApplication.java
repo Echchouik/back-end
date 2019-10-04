@@ -12,7 +12,7 @@ public class BackEndApplication {
 	
 	@Bean
 	public FilterRegistrationBean<JwtFilter> jwtFilter() {
-		final FilterRegistrationBean<JwtFilter> registrationBean = new FilterRegistrationBean<JwtFilter>();
+		final FilterRegistrationBean<JwtFilter> registrationBean = new FilterRegistrationBean<>();
 		registrationBean.setFilter(new JwtFilter());
 		registrationBean.addUrlPatterns("/rest/*");
 		return registrationBean;
