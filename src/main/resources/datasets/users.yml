@@ -1,0 +1,11 @@
+APPUSER: 
+  - userId: 1
+    firstName: toto
+    lastName: rina
+    userName: root
+    password: toor
+  - userId: 2
+    firstName: totor
+    lastName: castor
+    userName: admin
+    password: pass
